@@ -17,7 +17,7 @@ dispci.dll:  ============END DisplayClassInstaller==============
 dispci.dll:  ============BEGIN DisplayClassInstaller============
 dispci.dll:  ============BEGIN OnInstallDeviceFiles============
 dispci.dll:  ============END OnInstallDeviceFiles==============
-dispci.dll:  DisplayClassInstaller: Returning 0xe000020e for DIF 0x15 and device VMBUS\{DA0A7802-E377-4AAC-8E77-0558EB1073F8}\{5620E0C7-8062-4DCE-AEB7-520C7EF76171}
+20 dispci.dll:  DisplayClassInstaller: Returning 0xe000020e for DIF 0x15 and device VMBUS\{DA0A7802-E377-4AAC-8E77-0558EB1073F8}\{5620E0C7-8062-4DCE-AEB7-520C7EF76171}
 dispci.dll:  ============END DisplayClassInstaller==============
 dispci.dll:  ============BEGIN DisplayClassInstaller============
 dispci.dll:  DisplayClassInstaller: Unrecognized DIF request 0x3743030c
@@ -166,4 +166,3 @@ WdfCoInstaller: [10/11/2016 13:08.00.077] ReadComponents:  WdfSection for Driver
 [10/11/2016 13:08.00.108] WinusbUpdate: No update found for this OS, but OS is supported - returning NO_ERROR.
 
 WdfCoInstaller: [10/11/2016 13:08.00.378] DIF_INSTALLDEVICE: Post-Processing
-

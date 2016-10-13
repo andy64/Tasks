@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsModule", "MethodsModule\MethodsModule.csproj", "{BE0D0B7C-B866-4D17-BD81-4D224A10EC0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperationsModule", "Operations\OperationsModule.csproj", "{C7E3C94A-5E0C-46F7-A452-88D00D8F4324}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperationsModuleLib", "Operations\OperationsModuleLib\OperationsModuleLib.csproj", "{C1A9B106-80A5-4065-9DF8-C6DA397C7259}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +17,13 @@ Global
 		{BE0D0B7C-B866-4D17-BD81-4D224A10EC0F}.Debug|x86.Build.0 = Debug|x86
 		{BE0D0B7C-B866-4D17-BD81-4D224A10EC0F}.Release|x86.ActiveCfg = Release|x86
 		{BE0D0B7C-B866-4D17-BD81-4D224A10EC0F}.Release|x86.Build.0 = Release|x86
+		{C7E3C94A-5E0C-46F7-A452-88D00D8F4324}.Debug|x86.ActiveCfg = Debug|x86
+		{C7E3C94A-5E0C-46F7-A452-88D00D8F4324}.Debug|x86.Build.0 = Debug|x86
+		{C7E3C94A-5E0C-46F7-A452-88D00D8F4324}.Release|x86.ActiveCfg = Release|x86
+		{C7E3C94A-5E0C-46F7-A452-88D00D8F4324}.Release|x86.Build.0 = Release|x86
+		{C1A9B106-80A5-4065-9DF8-C6DA397C7259}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C1A9B106-80A5-4065-9DF8-C6DA397C7259}.Debug|x86.Build.0 = Debug|Any CPU
+		{C1A9B106-80A5-4065-9DF8-C6DA397C7259}.Release|x86.ActiveCfg = Release|Any CPU
+		{C1A9B106-80A5-4065-9DF8-C6DA397C7259}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
