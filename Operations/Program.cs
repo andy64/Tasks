@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-
+using ModuleLib;
 
 namespace OperationsModule
 {
@@ -51,7 +51,37 @@ namespace OperationsModule
 			}
 		
 		}
+
+
+		public static void SecondTask() { 
+		string type = null;
+			string coef = "";
+			Func<bool> meetConditions = new Func<bool>(() => {
+				bool rez = false;
+				string[] coefs = coef.Split(' ');
+				if (type.Equals("L")) { rez = coefs[1] == "0"; }
+				else {
+					rez = coefs[0] == "0";
+				}
+				return !rez;
+			});
+			do
+			{
+				Console.WriteLine("Enter the equation type: L-linear, Q-square");
+				type = Console.ReadLine();
+			} while (type != "L" && type != "Q");
+
+			do
+			{
+				Console.WriteLine("Enter the coefs devided by space ' '");
+				coef = Console.ReadLine();
+			} while (!System.Text.RegularExpressions.Regex.IsMatch(coef, @"-?(\d+|\d+\.\d+)\s-?(\d+|\d+\.\d+)\s-?(\d+|\d+\.\d+)") && meetConditions());
+
+
+			Console.WriteLine(new Equation(type, coef).Solve());
+		}
 	}
+
 
 
 
@@ -61,15 +91,7 @@ namespace OperationsModule
 		public static void Main(string[] args)
 		{
 			//OperationsModuleHelper.FirstTask();
-
-			Console.WriteLine("Enter the equation type: L-linear, Q-square");
-			string type = Console.ReadLine();
-			Console.WriteLine("Enter the coefs devided by space ' '");
-			string coef = Console.ReadLine();
-
-			//Console.WriteLine("Result: {0}", new Equation(type,coef).Solve());
-
-
+			OperationsModuleHelper.SecondTask();
 			Console.Read();
 		}
 
