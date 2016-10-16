@@ -4,6 +4,7 @@ using ModuleLib;
 
 namespace OperationsModule
 {
+
 	public static class OperationsModuleHelper {
 		public static void FirstTask() { 
 		   string curPath = Directory.GetCurrentDirectory();
@@ -41,15 +42,12 @@ namespace OperationsModule
 						tw.WriteLine(l);
 					}
 				}
-
 			}
 			finally
 			{
-
 				if (fs != null)
 					fs.Dispose();
-			}
-		
+			}		
 		}
 
 
@@ -59,7 +57,8 @@ namespace OperationsModule
 			Func<bool> meetConditions = new Func<bool>(() => {
 				bool rez = false;
 				string[] coefs = coef.Split(' ');
-				if (type.Equals("L")) { rez = coefs[1] == "0"; }
+				if (type.Equals("L")) { rez = coefs[1] == "0";		
+				}
 				else {
 					rez = coefs[0] == "0";
 				}
@@ -75,10 +74,18 @@ namespace OperationsModule
 			{
 				Console.WriteLine("Enter the coefs devided by space ' '");
 				coef = Console.ReadLine();
-			} while (!System.Text.RegularExpressions.Regex.IsMatch(coef, @"-?(\d+|\d+\.\d+)\s-?(\d+|\d+\.\d+)\s-?(\d+|\d+\.\d+)") && meetConditions());
+			} while (!System.Text.RegularExpressions.Regex.IsMatch(coef, @"-?(\d+|\d+\.\d+)\s-?(\d+|\d+\.\d+)\s-?(\d+|\d+\.\d+)") || !meetConditions());
+
+			Equation eq;
+			try
+			{
+				if (type == "L"){ eq = new LinearEquation(coef); }
+				else { eq = new QuadraticEquation(coef); }
+				Console.WriteLine(eq.Solve());
+			}
+			catch (Exception e) { Console.WriteLine(e.Message); }
 
 
-			Console.WriteLine(new Equation(type, coef).Solve());
 		}
 	}
 
