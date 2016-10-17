@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperationsModule", "Operati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperationsModuleLib", "Operations\OperationsModuleLib\OperationsModuleLib.csproj", "{C1A9B106-80A5-4065-9DF8-C6DA397C7259}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternsModule", "DesignPatternsModule\DesignPatternsModule.csproj", "{50057657-4F7F-46F7-AE03-F90DA191A48A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -25,5 +27,9 @@ Global
 		{C1A9B106-80A5-4065-9DF8-C6DA397C7259}.Debug|x86.Build.0 = Debug|Any CPU
 		{C1A9B106-80A5-4065-9DF8-C6DA397C7259}.Release|x86.ActiveCfg = Release|Any CPU
 		{C1A9B106-80A5-4065-9DF8-C6DA397C7259}.Release|x86.Build.0 = Release|Any CPU
+		{50057657-4F7F-46F7-AE03-F90DA191A48A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{50057657-4F7F-46F7-AE03-F90DA191A48A}.Debug|x86.Build.0 = Debug|Any CPU
+		{50057657-4F7F-46F7-AE03-F90DA191A48A}.Release|x86.ActiveCfg = Release|Any CPU
+		{50057657-4F7F-46F7-AE03-F90DA191A48A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

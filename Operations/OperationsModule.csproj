@@ -40,6 +40,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="sampleFile.txt" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DesignPatternsModule\DesignPatternsModule.csproj">
+      <Project>{50057657-4F7F-46F7-AE03-F90DA191A48A}</Project>
+      <Name>DesignPatternsModule</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

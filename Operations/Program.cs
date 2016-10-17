@@ -1,11 +1,14 @@
 ﻿using System;
 using System.IO;
 using ModuleLib;
+using DesignPatternsModule;
 
 namespace OperationsModule
 {
+	
 
 	public static class OperationsModuleHelper {
+
 		public static void FirstTask() { 
 		   string curPath = Directory.GetCurrentDirectory();
 			string filePath = Path.GetFullPath(Path.Combine(curPath, @"..\..\", "sampleFile.txt"));
@@ -15,7 +18,6 @@ namespace OperationsModule
 			Directory.CreateDirectory(folderPath);
 			string newFilePath = Path.Combine(folderPath, "newFile.txt");
 			File.Open(newFilePath, FileMode.Create).Dispose();
-
 
 			int counter = 0;
 			string line;
@@ -49,7 +51,6 @@ namespace OperationsModule
 					fs.Dispose();
 			}		
 		}
-
 
 		public static void SecondTask() { 
 		string type = null;
@@ -87,6 +88,13 @@ namespace OperationsModule
 
 
 		}
+
+		public static void DesignPatternsTask() {
+			var sl = SeleniumLib.getInstance();
+			sl.InitDriver();
+			sl.CloseDriver();
+		}
+	
 	}
 
 
@@ -98,7 +106,8 @@ namespace OperationsModule
 		public static void Main(string[] args)
 		{
 			//OperationsModuleHelper.FirstTask();
-			OperationsModuleHelper.SecondTask();
+			//OperationsModuleHelper.SecondTask();
+			OperationsModuleHelper.DesignPatternsTask();
 			Console.Read();
 		}
 
