@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperationsModuleLib", "Oper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternsModule", "DesignPatternsModule\DesignPatternsModule.csproj", "{50057657-4F7F-46F7-AE03-F90DA191A48A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaDecorator", "PizzaDecorator\PizzaDecorator.csproj", "{C25AE1F0-3AF4-4B37-BFA7-8C423B5D37F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -31,5 +33,9 @@ Global
 		{50057657-4F7F-46F7-AE03-F90DA191A48A}.Debug|x86.Build.0 = Debug|Any CPU
 		{50057657-4F7F-46F7-AE03-F90DA191A48A}.Release|x86.ActiveCfg = Release|Any CPU
 		{50057657-4F7F-46F7-AE03-F90DA191A48A}.Release|x86.Build.0 = Release|Any CPU
+		{C25AE1F0-3AF4-4B37-BFA7-8C423B5D37F9}.Debug|x86.ActiveCfg = Debug|x86
+		{C25AE1F0-3AF4-4B37-BFA7-8C423B5D37F9}.Debug|x86.Build.0 = Debug|x86
+		{C25AE1F0-3AF4-4B37-BFA7-8C423B5D37F9}.Release|x86.ActiveCfg = Release|x86
+		{C25AE1F0-3AF4-4B37-BFA7-8C423B5D37F9}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
